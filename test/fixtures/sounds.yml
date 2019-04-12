@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  drum-id: MyString
+  pad-1: MyString
+  pad-2: MyString
+  pad-3: MyString
+  pad-4: MyString
+  pad-5: MyString
+  pad-6: MyString
+  pad-7: MyString
+  pad-8: MyString
+
+two:
+  drum-id: MyString
+  pad-1: MyString
+  pad-2: MyString
+  pad-3: MyString
+  pad-4: MyString
+  pad-5: MyString
+  pad-6: MyString
+  pad-7: MyString
+  pad-8: MyString
