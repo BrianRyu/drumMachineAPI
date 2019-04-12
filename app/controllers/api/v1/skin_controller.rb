@@ -1,4 +1,4 @@
-class Api::V1::DrumMachineController < ApplicationController
+class Api::V1::SkinController < ApplicationController
 	before_action :find_skin, only: [:update]
   def index
 

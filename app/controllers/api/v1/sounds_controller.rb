@@ -1,4 +1,4 @@
-class Api::V1::DrumSoundsController < ApplicationController
+class Api::V1::SoundsController < ApplicationController
  before_action :find_sound, only: [:update]
   def index
   
