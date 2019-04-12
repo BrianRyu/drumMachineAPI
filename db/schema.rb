@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_04_12_142248) do
   end
 
   create_table "sounds", force: :cascade do |t|
-    t.string "drum_id"
+    t.integer "drum_id"
     t.string "pad_1"
     t.string "pad_2"
     t.string "pad_3"
