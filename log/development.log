@@ -992,3 +992,489 @@ Migrating to CreateSkins (20190412142248)
   ↳ bin/rails:9
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT  "sounds".* FROM "sounds" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkin Load (0.8ms)[0m  [1m[34mSELECT  "skins".* FROM "skins" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Create (2.8ms)[0m  [1m[32mINSERT INTO "sounds" ("drum_id", "pad_1", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["drum_id", 1], ["pad_1", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3"], ["created_at", "2019-04-12 15:46:38.413919"], ["updated_at", "2019-04-12 15:46:38.413919"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.7ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.4ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.4ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.0ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.7ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.7ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.5ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.7ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.3ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.5ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.1ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_2" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_2", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0000.mp3"], ["updated_at", "2019-04-12 15:53:15.789156"], ["id", 1]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT  "sounds".* FROM "sounds" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSound Load (0.5ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.8ms)[0m  [1m[33mUPDATE "sounds" SET "pad_3" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_3", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3"], ["updated_at", "2019-04-12 15:54:42.757429"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.6ms)[0m  [1m[33mUPDATE "sounds" SET "pad_4" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_4", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3"], ["updated_at", "2019-04-12 15:55:35.189946"], ["id", 1]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.1ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.5ms)[0m  [1m[33mUPDATE "sounds" SET "pad_5" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_5", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3"], ["updated_at", "2019-04-12 15:56:03.376876"], ["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.5ms)[0m  [1m[33mUPDATE "sounds" SET "pad_6" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_6", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3"], ["updated_at", "2019-04-12 15:56:29.512967"], ["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_7" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_7", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CY0010.mp3"], ["updated_at", "2019-04-12 15:57:12.529693"], ["id", 1]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.6ms)[0m  [1m[33mUPDATE "sounds" SET "pad_8" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_8", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3"], ["updated_at", "2019-04-12 15:57:36.383567"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (1.3ms)[0m  [1m[34mSELECT  "skins".* FROM "skins" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSkin Create (1.5ms)[0m  [1m[32mINSERT INTO "skins" ("skin_url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["skin_url", "https://images-na.ssl-images-amazon.com/images/G/01/musical_instruments/detail-page/akai-mpc1000-front_face-800.jpg"], ["created_at", "2019-04-12 15:59:36.865370"], ["updated_at", "2019-04-12 15:59:36.865370"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSkin Load (0.7ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (1.2ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (0.8ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSound Load (1.7ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (2.2ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (2.0ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (2.0ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.2ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (2.0ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.1ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (2.0ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (1.3ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (1.1ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (0.7ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSkins (20190412142248)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mDROP TABLE "skins"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190412142248"]]
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSounds (20190412142102)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mDROP TABLE "sounds"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190412142102"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSounds (20190412142102)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "sounds" ("id" bigserial primary key, "skin_id" integer, "pad_1" character varying, "pad_2" character varying, "pad_3" character varying, "pad_4" character varying, "pad_5" character varying, "pad_6" character varying, "pad_7" character varying, "pad_8" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190412142102_create_sounds.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190412142102"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSkins (20190412142248)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "skins" ("id" bigserial primary key, "skin_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190412142248_create_skins.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190412142248"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mSkin Load (0.7ms)[0m  [1m[34mSELECT  "skins".* FROM "skins" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkin Load (0.6ms)[0m  [1m[34mSELECT  "skins".* FROM "skins" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Create (9.5ms)[0m  [1m[32mINSERT INTO "sounds" ("pad_1", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pad_1", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3"], ["created_at", "2019-04-12 16:12:32.452157"], ["updated_at", "2019-04-12 16:12:32.452157"]]
+  [1m[35m (39.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.0ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_2" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_2", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0000.mp3"], ["updated_at", "2019-04-12 16:12:57.925228"], ["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_3" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_3", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3"], ["updated_at", "2019-04-12 16:13:08.611059"], ["id", 1]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.5ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.5ms)[0m  [1m[33mUPDATE "sounds" SET "pad_4" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_4", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3"], ["updated_at", "2019-04-12 16:13:15.743984"], ["id", 1]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_5" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_5", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3"], ["updated_at", "2019-04-12 16:13:24.619202"], ["id", 1]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.6ms)[0m  [1m[33mUPDATE "sounds" SET "pad_6" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_6", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3"], ["updated_at", "2019-04-12 16:13:42.387050"], ["id", 1]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.5ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.5ms)[0m  [1m[33mUPDATE "sounds" SET "pad_7" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_7", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CY0010.mp3"], ["updated_at", "2019-04-12 16:13:53.912269"], ["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.0ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_8" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_8", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3"], ["updated_at", "2019-04-12 16:14:00.219718"], ["id", 1]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.5ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSkin Create (2.2ms)[0m  [1m[32mINSERT INTO "skins" ("skin_url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["skin_url", "https://images-na.ssl-images-amazon.com/images/G/01/musical_instruments/detail-page/akai-mpc1000-front_face-800.jpg"], ["created_at", "2019-04-12 16:19:35.582513"], ["updated_at", "2019-04-12 16:19:35.582513"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT  "sounds".* FROM "sounds" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.5ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (0.7ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (1.7ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (0.9ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSkins (20190412142248)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mDROP TABLE "skins"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190412142248"]]
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSounds (20190412142102)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[35mDROP TABLE "sounds"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190412142102"]]
+  ↳ bin/rails:9
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSounds (20190412142102)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (9.6ms)[0m  [1m[35mCREATE TABLE "sounds" ("id" bigserial primary key, "skin_id" integer, "pad_1" character varying, "pad_2" character varying, "pad_3" character varying, "pad_4" character varying, "pad_5" character varying, "pad_6" character varying, "pad_7" character varying, "pad_8" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190412142102_create_sounds.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190412142102"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSkins (20190412142248)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "skins" ("id" bigserial primary key, "skin_url" character varying, "sound_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190412142248_create_skins.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190412142248"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Create (1.0ms)[0m  [1m[32mINSERT INTO "sounds" ("pad_1", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pad_1", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3"], ["created_at", "2019-04-12 16:23:10.879331"], ["updated_at", "2019-04-12 16:23:10.879331"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.1ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (1.1ms)[0m  [1m[33mUPDATE "sounds" SET "pad_2" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_2", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0000.mp3"], ["updated_at", "2019-04-12 16:23:21.081000"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.7ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.6ms)[0m  [1m[33mUPDATE "sounds" SET "pad_3" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_3", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3"], ["updated_at", "2019-04-12 16:23:29.567540"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.8ms)[0m  [1m[33mUPDATE "sounds" SET "pad_4" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_4", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3"], ["updated_at", "2019-04-12 16:23:35.385211"], ["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_5" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_5", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3"], ["updated_at", "2019-04-12 16:23:39.897411"], ["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.1ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.5ms)[0m  [1m[33mUPDATE "sounds" SET "pad_6" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_6", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3"], ["updated_at", "2019-04-12 16:23:44.596839"], ["id", 1]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.2ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.5ms)[0m  [1m[33mUPDATE "sounds" SET "pad_7" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_7", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CY0010.mp3"], ["updated_at", "2019-04-12 16:23:49.660583"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_8" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_8", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3"], ["updated_at", "2019-04-12 16:23:57.382946"], ["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSkin Create (0.8ms)[0m  [1m[32mINSERT INTO "skins" ("skin_url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["skin_url", "https://images-na.ssl-images-amazon.com/images/G/01/musical_instruments/detail-page/akai-mpc1000-front_face-800.jpg"], ["created_at", "2019-04-12 16:24:11.786888"], ["updated_at", "2019-04-12 16:24:11.786888"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.0ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (0.7ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (0.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.3ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.5ms)[0m  [1m[33mUPDATE "sounds" SET "skin_id" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["skin_id", 1], ["updated_at", "2019-04-12 16:25:38.303586"], ["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (1.2ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSound Load (1.1ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (0.3ms)[0m  [1m[34mSELECT  "skins".* FROM "skins" WHERE "skins"."sound_id" = $1 LIMIT $2[0m  [["sound_id", 1], ["LIMIT", 11]]
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (0.5ms)[0m  [1m[34mSELECT  "skins".* FROM "skins" WHERE "skins"."sound_id" = $1 LIMIT $2[0m  [["sound_id", 1], ["LIMIT", 11]]
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (0.5ms)[0m  [1m[34mSELECT  "skins".* FROM "skins" WHERE "skins"."sound_id" = $1 LIMIT $2[0m  [["sound_id", 1], ["LIMIT", 11]]
+  [1m[36mSkin Load (0.4ms)[0m  [1m[34mSELECT  "skins".* FROM "skins" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSound Load (1.1ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (0.7ms)[0m  [1m[34mSELECT  "skins".* FROM "skins" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkin Load (1.7ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (0.5ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (0.6ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (0.7ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSkin Update (0.6ms)[0m  [1m[33mUPDATE "skins" SET "sound_id" = $1, "updated_at" = $2 WHERE "skins"."id" = $3[0m  [["sound_id", 1], ["updated_at", "2019-04-12 16:28:16.825410"], ["id", 1]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSkin Load (1.8ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (1.2ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSound Load (0.4ms)[0m  [1m[34mSELECT  "sounds".* FROM "sounds" WHERE "sounds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSkin Load (0.7ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT  "sounds".* FROM "sounds" WHERE "sounds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSkins (20190412142248)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mDROP TABLE "skins"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190412142248"]]
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSounds (20190412142102)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mDROP TABLE "sounds"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190412142102"]]
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSounds (20190412142102)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "sounds" ("id" bigserial primary key, "pad_1" character varying, "pad_2" character varying, "pad_3" character varying, "pad_4" character varying, "pad_5" character varying, "pad_6" character varying, "pad_7" character varying, "pad_8" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190412142102_create_sounds.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190412142102"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSkins (20190412142248)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "skins" ("id" bigserial primary key, "skin_url" character varying, "sound_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190412142248_create_skins.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190412142248"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(615954146104180905)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT  "sounds".* FROM "sounds" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSound Load (0.9ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSkin Create (0.9ms)[0m  [1m[32mINSERT INTO "skins" ("skin_url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["skin_url", "https://images-na.ssl-images-amazon.com/images/G/01/musical_instruments/detail-page/akai-mpc1000-front_face-800.jpg"], ["created_at", "2019-04-12 16:31:10.974845"], ["updated_at", "2019-04-12 16:31:10.974845"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Create (0.7ms)[0m  [1m[32mINSERT INTO "sounds" ("pad_1", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pad_1", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3"], ["created_at", "2019-04-12 16:31:27.700644"], ["updated_at", "2019-04-12 16:31:27.700644"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_2" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_2", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0000.mp3"], ["updated_at", "2019-04-12 16:31:35.762909"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_3" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_3", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3"], ["updated_at", "2019-04-12 16:31:41.454117"], ["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.7ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.5ms)[0m  [1m[33mUPDATE "sounds" SET "pad_4" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_4", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3"], ["updated_at", "2019-04-12 16:31:46.442960"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.6ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.5ms)[0m  [1m[33mUPDATE "sounds" SET "pad_5" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_5", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3"], ["updated_at", "2019-04-12 16:31:50.897788"], ["id", 1]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_6" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_6", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3"], ["updated_at", "2019-04-12 16:31:56.605818"], ["id", 1]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.8ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.6ms)[0m  [1m[33mUPDATE "sounds" SET "pad_7" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_7", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CY0010.mp3"], ["updated_at", "2019-04-12 16:32:02.477297"], ["id", 1]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.7ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSound Update (0.7ms)[0m  [1m[33mUPDATE "sounds" SET "pad_8" = $1, "updated_at" = $2 WHERE "sounds"."id" = $3[0m  [["pad_8", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3"], ["updated_at", "2019-04-12 16:32:10.347266"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSound Load (0.5ms)[0m  [1m[34mSELECT "sounds".* FROM "sounds"[0m
+  [1m[36mSkin Load (0.9ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (0.8ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSkin Load (0.6ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSkin Update (0.6ms)[0m  [1m[33mUPDATE "skins" SET "sound_id" = $1, "updated_at" = $2 WHERE "skins"."id" = $3[0m  [["sound_id", 1], ["updated_at", "2019-04-12 16:33:38.115583"], ["id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSkin Load (1.2ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSound Load (0.4ms)[0m  [1m[34mSELECT  "sounds".* FROM "sounds" WHERE "sounds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSkin Load (1.2ms)[0m  [1m[34mSELECT "skins".* FROM "skins"[0m
+  [1m[36mSound Load (0.4ms)[0m  [1m[34mSELECT  "sounds".* FROM "sounds" WHERE "sounds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]

@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 2019_04_12_142248) do
 
   create_table "skins", force: :cascade do |t|
     t.string "skin_url"
+    t.integer "sound_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "sounds", force: :cascade do |t|
-    t.integer "drum_id"
     t.string "pad_1"
     t.string "pad_2"
     t.string "pad_3"
