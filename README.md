@@ -1,25 +1,19 @@
 # README
+Ruby on Rails leveraged to build drumMachine API. RESTful API following MVC pattern.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run 'rails s' to start application API.
 
-Things you may want to cover:
+## MODELS
 
-* Ruby version
+Drumkit
+  - has_many KitSounds
+  - has_many Sounds through KitSounds
 
-* System dependencies
+KitSound (Joiner)
+  - belongs_to Drumkit
+  - belongs_to Sound
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# drumMachineAPI
+Sound
+  - has_many KitSounds
+  - has_many DrumKits through KitSounds
+  
